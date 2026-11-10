@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071a35">
+  <title>Thermometer Virtual Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="world">
+    <header class="topbar">
+      <div class="brand">🧪 SCIENCE WORLD</div>
+      <div class="status">● VIRTUAL LAB</div>
+    </header>
+
+    <section class="hero">
+      <div class="planet">🌡️</div>
+      <p class="eyebrow">WELCOME TO SCIENCE WORLD</p>
+      <h1>THERMOMETER<br><span>VIRTUAL LAB</span></h1>
+      <p class="subtitle">
+        สนามแข่งขันนักวิทยาศาสตร์ตัวจิ๋ว
+      </p>
+
+      <div class="login-panel">
+        <label for="playerName">ชื่อนักวิทยาศาสตร์</label>
+        <input id="playerName" type="text"
+          placeholder="กรอกชื่อของคุณ" maxlength="20">
+
+        <label for="roomCode">รหัสห้องแข่งขัน 6 หลัก</label>
+        <input id="roomCode" type="text"
+          inputmode="numeric" maxlength="6"
+          placeholder="เช่น 123456">
+
+        <button id="joinButton">🚀 เข้าสู่ห้องทดลอง</button>
+        <p id="message" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <footer>
+      SCIENCE WORLD © THERMOMETER VIRTUAL LAB
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
