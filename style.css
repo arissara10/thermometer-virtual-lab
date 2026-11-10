@@ -1,0 +1,154 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: #07152f;
+}
+
+.world {
+  min-height: 100vh;
+  padding: 20px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 35%, #174a85, transparent 48%),
+    linear-gradient(145deg, #07152f, #101039, #07152f);
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 12px 4px;
+}
+
+.brand {
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #72e8ff;
+}
+
+.status {
+  font-size: 12px;
+  color: #6effbd;
+  border: 1px solid #36c99a;
+  border-radius: 30px;
+  padding: 8px 14px;
+}
+
+.hero {
+  text-align: center;
+  padding: 25px 12px 45px;
+  max-width: 720px;
+  margin: auto;
+}
+
+.planet {
+  font-size: 90px;
+  margin: 12px 0;
+  filter: drop-shadow(0 0 22px #45d9ff);
+  animation: float 3s ease-in-out infinite;
+}
+
+.eyebrow {
+  color: #75eaff;
+  letter-spacing: 4px;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: clamp(32px, 8vw, 65px);
+  line-height: 1.08;
+  margin: 15px 0;
+  font-weight: 900;
+  text-shadow: 0 0 25px #168bff;
+}
+
+h1 span {
+  color: #62e9ff;
+}
+
+.subtitle {
+  color: #c6d9ff;
+  font-size: 17px;
+}
+
+.login-panel {
+  max-width: 420px;
+  margin: 30px auto 0;
+  padding: 25px;
+  background: rgba(17, 36, 78, .85);
+  border: 1px solid #397db7;
+  border-radius: 22px;
+  box-shadow: 0 0 35px #087baf44;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin: 12px 0 8px;
+  color: #bfeaff;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #4276a9;
+  border-radius: 12px;
+  background: #081a38;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #60e8ff;
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 16px;
+  border: 0;
+  border-radius: 12px;
+  color: #062044;
+  background: linear-gradient(90deg, #60e8ff, #70ffca);
+  font-weight: 900;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(.98);
+}
+
+#message {
+  text-align: center;
+  font-size: 13px;
+  color: #ffca78;
+}
+
+footer {
+  text-align: center;
+  color: #718bac;
+  font-size: 10px;
+  padding: 20px;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+@media (max-width: 480px) {
+  .world { padding: 12px; }
+  .brand { font-size: 13px; }
+  .login-panel { padding: 20px; }
+}
